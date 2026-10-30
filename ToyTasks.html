@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyTask Manager</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff7e6;
+            color: #333;
+        }
+
+        header {
+            background: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 35px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px #ddd;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff6b6b;
+        }
+
+        .description {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            gap: 10px;
+            margin: 25px 0;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            min-width: 0;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 11px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .add-btn {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: #eee;
+        }
+
+        .filter-btn.active {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        #taskList {
+            list-style: none;
+            padding: 0;
+        }
+
+        .task {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #fff7e6;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .task span {
+            flex: 1;
+            overflow-wrap: anywhere;
+        }
+
+        .task.completed span {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .delete-btn {
+            background: #333;
+            color: white;
+        }
+
+        #counter, #emptyMessage {
+            text-align: center;
+        }
+
+        #counter {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 450px) {
+            form {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🧸 ToyTask Manager 🧸</h1>
+    <p>Plan Your Shopping • Complete Your Tasks</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Toys</a>
+    <a href="#">Tasks</a>
+</nav>
+
+<div class="container">
+    <h2>🎁 My Task Tracker</h2>
+    <p class="description">Add, complete, or delete your toy shopping tasks!</p>
+
+    <form id="taskForm">
+        <input type="text" id="taskInput"
+               placeholder="Enter a task..." aria-label="Enter a task">
+        <button type="submit" class="add-btn">Add Task</button>
+    </form>
+
+    <div class="filters">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="open">Open</button>
+        <button type="button" class="filter-btn" data-filter="finished">Finished</button>
+    </div>
+
+    <ul id="taskList"></ul>
+    <p id="emptyMessage">No tasks yet. Add your first task!</p>
+    <p id="counter">0 tasks left</p>
+</div>
+
+<footer>
+    <p>© 2026 ToyTask Manager</p>
+    <p>Made with HTML, CSS and JavaScript ❤️</p>
+</footer>
+
+<script src="ToyTasks.js"></script>
+
+</body>
+</html>
