@@ -1,0 +1,62 @@
+# 🧸 ToyTask Manager
+### JavaScript Functions – Web Application
+## 📌 Project Description
+ToyTask Manager is a simple and interactive task-tracking web application developed using HTML, CSS, and JavaScript. It allows users to add tasks, mark tasks as completed, delete tasks, and filter tasks based on their status. The application uses JavaScript functions to perform each operation and provides a simple, user-friendly interface with a toy store theme.
+## ✨ Features
+- **Add Tasks:** Add new tasks using the input field.
+- **Complete Tasks:** Mark tasks as completed using a checkbox.
+- **Delete Tasks:** Remove unwanted tasks from the list.
+- **Filter Tasks:** View all tasks, open tasks, or finished tasks.
+- **Task Counter:** Displays the number of unfinished tasks.
+- **Data Storage:** Saves tasks in browser `localStorage`.
+- **Responsive Design:** Works on desktop and mobile screens.
+## 🛠️ Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Browser Local Storage
+## 📂 Project Structure
+```text
+ToyTaskManager/
+├── ToyTasks.html
+├── ToyTasks.js
+└── README.md
+```
+## ⚙️ JavaScript Functions
+| Function | Purpose |
+|---|---|
+| `createTask()` | Creates a new task object. |
+| `addTask()` | Adds a task to the list. |
+| `toggleTask()` | Marks a task as completed or incomplete. |
+| `deleteTask()` | Removes a task from the list. |
+| `getVisible()` | Filters tasks based on their status. |
+| `countOpen()` | Counts unfinished tasks. |
+| `taskItem()` | Creates a task list item. |
+| `renderTasks()` | Displays the tasks on the webpage. |
+| `saveAndRender()` | Saves tasks and refreshes the display. |
+| `handleSubmit()` | Handles form submission. |
+| `handleFilter()` | Handles task filter selection. |
+## 🚀 How to Run
+1. Download or clone the repository.
+2. Open the project folder in Visual Studio Code.
+3. Make sure `ToyTasks.html` and `ToyTasks.js` are in the same folder.
+4. Open `ToyTasks.html` in a web browser or run it using the Live Server extension.
+5. Enter a task and click **Add Task**.
+6. Use the checkbox to complete tasks, the Delete button to remove tasks, and the filter buttons to organize the list.
+## 🧪 Example
+**Sample Task:** Buy a teddy bear
+- Add the task to the list.
+- Mark it as completed using the checkbox.
+- Select **Finished** to view completed tasks.
+- Select **Open** to view unfinished tasks.
+## 🎯 Learning Outcomes
+- Understanding JavaScript functions and parameters.
+- Using arrays to manage task data.
+- Working with event listeners and callback functions.
+- Using `map()`, `filter()`, and `forEach()`.
+- Manipulating HTML elements through the DOM.
+- Saving and retrieving data using `localStorage`.
+## ✅ Result
+The ToyTask Manager web application was successfully developed using HTML, CSS, and JavaScript. It demonstrates how reusable functions can be used to build an interactive web application.
+---
+**Developed as a JavaScript Functions Web Application Project.** ❤️
